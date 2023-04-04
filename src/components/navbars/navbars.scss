@@ -65,6 +65,9 @@ nav {
     // justify-content: space-between;
     align-items: center;
     right: 0 !important;
+    img {
+      z-index: 11110;
+    }
   }
   .barss {
     display: block;
@@ -82,7 +85,7 @@ nav {
   }
   .navbar-nav {
     width: 100%;
-    position: absolute !important;
+    position: fixed !important;
     display: flex;
     flex-direction: column;
   }
@@ -113,7 +116,7 @@ nav {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 999;
     background-color: #092a49;
     color: white;
   }
