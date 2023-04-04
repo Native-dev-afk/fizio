@@ -1,0 +1,121 @@
+.foot {
+  position: relative;
+  margin-top: 45px;
+  padding-top: 90px;
+  background: #092a49;
+  padding: 100px 100px 0;
+  width: 100%;
+
+  &__items {
+    color: white;
+
+    &__menu {
+      display: flex;
+      justify-content: space-between;
+
+      &__contact {
+        width: 50%;
+        padding: 0;
+        list-style: none;
+        & > h4 {
+          font-family: "Oswald", sans-serif;
+          position: relative;
+          margin-bottom: 30px;
+          padding-bottom: 10px;
+          font-size: 22px;
+          font-weight: 300;
+          letter-spacing: 1px;
+          color: #ffffff;
+          margin: 0;
+          // padding-bottom: 30px;
+          margin-bottom: 30px;
+          &::after {
+            position: absolute;
+            content: "";
+            width: 45px;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: #0796fe;
+          }
+        }
+
+        & > li {
+          font-family: "Lato", sans-serif;
+          color: white;
+          padding-bottom: 16px;
+          // padding-left: 20px;
+
+          & > a {
+            font-family: "Lato", sans-serif;
+            color: white;
+            text-decoration: none;
+            transition: all ease 0.4s;
+
+            &::before {
+              position: relative;
+              content: "\f105";
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              margin-right: 10px;
+            }
+
+            &:hover {
+              // line-height: 2px;
+              letter-spacing: 1px;
+              color: #0796fe;
+            }
+          }
+        }
+      }
+    }
+
+    &__bottom {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      border-top: 1px solid rgba(256, 256, 256, 0.1);
+      & > p {
+        margin: 0;
+        color: #999999;
+
+        & > a {
+          text-decoration: none;
+          color: white;
+          transition: all ease 0.4s;
+
+          &:hover {
+            color: #0796fe;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:800px) {
+  .foot {
+    margin-left: 0 !important;
+    font-size: 12px;
+    &__items {
+      &__menu {
+        flex-direction: column;
+        &__contact {
+          width: 100% !important;
+
+          // width: 500px;
+          i {
+            // margin-right: 10px;
+          }
+          &.link {
+            // margin-top: 70px;
+          }
+        }
+      }
+      .foot__items__bottom {
+        width: 100%;
+        // text-align: center;
+        // margin-left: 100px;
+      }
+    }
+  }
+}

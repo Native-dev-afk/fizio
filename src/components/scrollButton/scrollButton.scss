@@ -1,0 +1,21 @@
+.button-fixed{
+    position: fixed;
+    cursor: pointer;
+    z-index: 9;
+    bottom: 15px;
+    color: #092A49;
+    right: 15px;
+    background: #0796fe;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    font-size: 22px;
+
+    &:hover{
+        background-color: #092A49;
+        color: #0796fe;
+    }
+}
