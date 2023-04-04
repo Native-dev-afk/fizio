@@ -281,13 +281,14 @@ function Navbars() {
                 <a
                   className="btn btn-primary dropdown-toggle"
                   href="#"
+                  id="dropdownMenuButton2"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                  aria-expanded="true"
                 >
                   mavzular
                 </a>
-                <ul className="dropdown-menu">
+                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                   <li>
                     <Link className="dropdown-item mavzular " to="/mavzular">
                       1-bob

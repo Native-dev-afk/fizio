@@ -66,7 +66,7 @@ nav {
     align-items: center;
     right: 0 !important;
     img {
-      z-index: 11110;
+      z-index: 101;
     }
   }
   .barss {
@@ -88,19 +88,20 @@ nav {
     position: fixed !important;
     display: flex;
     flex-direction: column;
-  }
-  .navbar-nav li {
-    display: none;
+    li {
+      display: none;
+    }
   }
   a {
     color: white !important;
     text-decoration: none !important;
     list-style: none;
-    margin-left: 25px;
+    // padding-left: 25px;
     font-size: 16px;
     letter-spacing: 1px;
     text-transform: uppercase;
   }
+ 
   .mobile-nav {
     position: absolute;
     width: 100%;
@@ -116,15 +117,16 @@ nav {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 999;
+    z-index: 100;
     background-color: #092a49;
     color: white;
+   
   }
   .dropdown {
     // top: 100px;
   }
   .dropdown-menu {
-    position: absolute !important;
+    // position: absolute !important;
   }
   // .fitBg {
   //   width: 100wh;
