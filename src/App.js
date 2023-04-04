@@ -2,7 +2,7 @@ import "./App.css";
 import Mavzular from "./components/mavzular/mavzular";
 import Mavzular2 from "./components/mavzular2/mavzular2";
 import Services from "./components/services/Services";
-import { Route, Router, Routes } from "react-router-dom";
+import { Route, Router, Routes, useNavigate } from "react-router-dom";
 import InnoTechLayout from "./components/Layouts/innotechLayout";
 import Home from "./components/home/Home";
 import News from "./components/news/news";
@@ -29,14 +29,14 @@ import Test8 from "./components/testlar/test8";
 import Test10 from "./components/testlar/test10";
 
 export function ScrollToTop() {
-  const { pathname } = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-  }, [pathname]);
+  }, [navigate]);
 
   return null;
 }

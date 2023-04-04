@@ -5,7 +5,7 @@ import "./navbars.scss";
 import Bars from "../../assets/imgs/menubars.png";
 import Close from "../../assets/imgs/close.svg";
 import { useNavigate } from "react-router-dom";
-import { useEffect, useLocation } from "react";
+import { useEffect } from "react";
 
 function Navbars() {
   const navigate = useNavigate();
@@ -367,16 +367,5 @@ function Navbars() {
     </>
   );
 }
-function ScrollToTop() {
-  const { pathname } = useLocation();
 
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }, [pathname]);
-
-  return null;
-}
 export default Navbars;
