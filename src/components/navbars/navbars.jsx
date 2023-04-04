@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Innologo from "../../assets/imgs/innologo.png";
 import "./navbars.scss";
